@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Biodata Mahasiswa</title>
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
         h1 {
             text-align: center;
         }
+
         table {
-            font-family: arial, sans-serif;
             border-collapse: collapse;
             width: 80%;
-        }
-        th {
-             border: 1px solid #000000;
-            text-align: center;
-            padding: 8px;
+            margin: auto;
         }
 
-        td {
+        th, td {
             border: 1px solid #000000;
             text-align: left;
             padding: 8px;
+            vertical-align: middle;
+        }
+
+        th {
+            text-align: center;
+            background-color: aqua;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: auto;
         }
     </style>
-
 </head>
 <body>
     <h1>BIODATA MAHASISWA UNIGA MALANG</h1>
@@ -33,7 +48,9 @@
         <tr>
             <th>Data Diri</th>
             <th>Keterangan</th>
-            <th rowspan="11" style="border: none;"><img src="https://avatars.githubusercontent.com/u/182607974?v=4" alt="" width="50%"></th>
+            <th rowspan="11" style="background-color: white;">
+                <img src="https://avatars.githubusercontent.com/u/182607974?v=4" alt="Foto Mahasiswa">
+            </th>
         </tr>
         <tr>
             <td>Nama</td>
